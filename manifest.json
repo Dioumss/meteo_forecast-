@@ -1,0 +1,15 @@
+{
+  "name": "Météo Sénégal 15 jours",
+  "short_name": "Météo SN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "icons": [
+    {
+      "src": "assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

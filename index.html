@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Météo Sénégal</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <meta name="theme-color" content="#667eea" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="mobile-header">
+    <h1>🌦️ Météo Sénégal</h1>
+  </header>
+
+  <main class="container">
+    <section class="mobile-controls">
+      <label for="region">📍 Région</label>
+      <select id="region"></select>
+
+      <label for="parameter">📊 Info</label>
+      <select id="parameter">
+        <option value="general">Vue générale</option>
+        <option value="temperature">Température</option>
+        <option value="precipitation">Pluie</option>
+        <option value="humidity">Humidité</option>
+        <option value="wind">Vent</option>
+        <option value="uv">UV</option>
+      </select>
+
+      <label for="date">📅 Jour</label>
+      <select id="date">
+        <option value="">Tous (J → J+14)</option>
+      </select>
+
+      <button id="searchBtn" class="search-btn">🔍 Voir la météo</button>
+    </section>
+
+    <section id="weatherDisplay" class="weather-cards"></section>
+  </main>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
